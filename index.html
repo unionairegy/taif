@@ -18,123 +18,128 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            background-image: linear-gradient(rgba(11, 15, 25, 0.9), rgba(11, 15, 25, 0.95)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1400&q=80');
+            align-items: center;
+            padding: 20px;
+            background-image: linear-gradient(rgba(11, 15, 25, 0.88), rgba(11, 15, 25, 0.95)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1400&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
         .container {
             width: 100%;
-            max-width: 100%;
-            padding: 10px;
+            max-width: 800px;
             margin: 0 auto;
         }
         .card {
-            background: rgba(30, 41, 59, 0.97);
-            padding: 20px 12px;
-            border-radius: 10px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+            background: rgba(30, 41, 59, 0.96);
+            padding: 40px 30px;
+            border-radius: 18px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.8);
             border: 1px solid #334155;
             text-align: right;
-            width: 100%;
         }
         .badge {
             background-color: #0284c7;
             color: #e0f2fe;
-            padding: 6px 16px;
-            font-size: 13px;
+            padding: 8px 20px;
+            font-size: 14px;
             border-radius: 20px;
             display: inline-block;
-            margin-bottom: 12px;
+            margin-bottom: 20px;
             font-weight: bold;
         }
         .header-section {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         h1 {
-            font-size: 22px;
+            font-size: 32px;
             color: #38bdf8;
-            margin-bottom: 10px;
-            line-height: 1.4;
+            margin-bottom: 15px;
+            line-height: 1.3;
         }
         .intro-p {
-            font-size: 14px;
+            font-size: 17px;
             color: #cbd5e1;
-            line-height: 1.6;
+            line-height: 1.7;
         }
         .service-box {
             background: rgba(15, 23, 42, 0.85);
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            border-right: 5px solid #38bdf8;
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            border-right: 6px solid #38bdf8;
         }
         .service-box.tanks {
             border-right-color: #22c55e;
         }
         .service-box h2 {
-            font-size: 17px;
+            font-size: 22px;
             color: #f8fafc;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
         .service-box p, .service-box li {
-            font-size: 13px;
+            font-size: 15px;
             color: #94a3b8;
-            line-height: 1.6;
+            line-height: 1.7;
             list-style: none;
         }
         .service-box ul {
-            margin-top: 6px;
+            margin-top: 12px;
         }
         .service-box li::before {
             content: "✓ ";
             color: #38bdf8;
             font-weight: bold;
+            font-size: 18px;
+            margin-left: 5px;
         }
         .service-box.tanks li::before {
-            content: "✓ ";
             color: #22c55e;
-            font-weight: bold;
         }
         .phone-box {
             background: #0f172a;
-            padding: 12px;
-            border-radius: 8px;
-            margin: 20px 0;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 30px 0;
             border: 1px dashed #38bdf8;
             text-align: center;
         }
         .phone-label {
-            font-size: 12px;
+            font-size: 15px;
             color: #94a3b8;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
         }
         .phone-number {
-            font-size: 26px;
+            font-size: 36px;
             color: #facc15;
             font-weight: bold;
             direction: ltr;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
         }
         .cta-btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             background: linear-gradient(135deg, #22c55e, #16a34a);
             color: white;
             text-decoration: none;
-            padding: 15px;
-            font-size: 18px;
+            padding: 20px;
+            font-size: 24px;
             font-weight: bold;
-            border-radius: 8px;
-            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.5);
+            transition: all 0.3s ease;
             text-align: center;
         }
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #16a34a, #15803d);
+        }
         footer {
-            margin: 15px 0;
-            font-size: 12px;
+            margin-top: 25px;
+            font-size: 14px;
             color: #64748b;
             text-align: center;
         }
@@ -145,49 +150,51 @@
     <div class="container">
         <div class="card">
             <div style="text-align: center;">
-                <span class="badge">خدمات معتمدة في الطائف</span>
+                <span class="badge">خدمات هندسية معتمدة بالطائف</span>
             </div>
             
             <div class="header-section">
                 <h1>أفضل شركة عزل اسطح وعزل خزانات بالطائف</h1>
-                <p class="intro-p">هل تبحث عن المتخصص الأول؟ نقدم لك أقوى خدمات <strong>عزل اسطح بالطائف</strong> و<strong>عزل خزانات بالطائف</strong> لحماية منزلك من تسربات المياه وحرارة الشمس مع ضمانات شاملة.</p>
+                <p class="intro-p">هل يعاني منزلك من تسربات المياه أو ارتفاع الحرارة؟ نحن نوفر لك أقوى وأحدث خدمات <strong>عزل اسطح بالطائف</strong> و<strong>عزل خزانات بالطائف</strong> بأعلى معايير الجودة الهندسيّة، مع ضمانات معتمدة وأسعار تنافسية تناسب الجميع لحماية منزلك بالكامل.</p>
             </div>
 
             <!-- قسم عزل الأسطح -->
             <div class="service-box">
-                <h2>🏠 خدمات عزل اسطح بالطائف (مائي وحراري)</h2>
-                <p>نعتبر من أرقى الشركات المتخصصة في <strong>عزل اسطح بالطائف</strong> لحماية المباني من الأمطار والحرارة العالية:</p>
+                <h2>🏠 خدمات عزل اسطح بالطائف (مائي وحراري متكامل)</h2>
+                <p>نعتبر الخيار الأول والأكثر احترافية في مجال <strong>عزل اسطح بالطائف</strong> لمقاومة تقلبات الطقس، الأمطار الشتوية الغزيرة، وحرارة الشمس الحارقة:</p>
                 <ul>
-                    <li>عزل فوم بولي يوريثان للأسطح المعتمد لحماية كاملة.</li>
-                    <li>عزل مائي وحراري للشينكو والأسطح الخرسانية.</li>
-                    <li>منع التشققات وتسربات المياه نهائياً بضمانات قوية.</li>
+                    <li>استخدام عزل فوم بولي يوريثان المطابق للمواصفات لعزل الحرارة والمياه معاً بكفاءة تامة.</li>
+                    <li>تنفيذ عزل مائي وحراري للأسطح الخرسانية والشينكو والأسطح المبلطة وغير المبلطة.</li>
+                    <li>معالجة التشققات، الشروخ، ومنع تسربات المياه نهائياً من السقف بضمانات طويلة الأمد.</li>
+                    <li>استخدام أجود أنواع الرولات البيوتومينية ومواد العزل المعتمدة عالمياً ومحلياً.</li>
                 </ul>
             </div>
 
             <!-- قسم عزل وتنظيف الخزانات -->
             <div class="service-box tanks">
-                <h2>💧 خدمات عزل خزانات بالطائف وتنظيفها</h2>
-                <p>نقدم أفضل حلول <strong>عزل خزانات بالطائف</strong> لضمان نقاء مياه الشرب ومنع أي تسريبات أرضية أو علوية:</p>
+                <h2>💧 خدمات عزل خزانات بالطائف وتطهيرها</h2>
+                <p>مياه نقية وصحية لعائلتك.. نقدم خدمات متكاملة متخصصة في <strong>عزل خزانات بالطائف</strong> للخزانات الأرضية والعلوية لضمان عدم حدوث أي تسريب أو تلوث للمياه:</p>
                 <ul>
-                    <li>عزل خزانات المياه من الداخل والخارج بمواد آمنة ومعتمدة.</li>
-                    <li>غسيل وتطهير وتعقيم الخزانات بأحدث الأساليب الصحية.</li>
-                    <li>معالجة التشققات وإصلاح الهبوط والتسربات بالخزانات.</li>
+                    <li>تنفيذ أعمال عزل خزانات بالطائف الداخلية والخارجية بمواد إيبوكسية آمنة وصحية 100%.</li>
+                    <li>غسيل، تطهير، وتعقيم الخزانات بأحدث الأساليب والمطهرات المصرح بها لضمان نقاء مياه الشرب.</li>
+                    <li>معالجة الشقوق، الهبوط، والتعشيش وإصلاح التسربات الكلية والجزئية بالخزانات القديمة والجديدة.</li>
+                    <li>توفير فحص شامل واختبار دوري لضمان سلامة خزان المياه ومنع أي تفاعل كيميائي.</li>
                 </ul>
             </div>
 
             <div class="phone-box">
-                <div class="phone-label">اتصل بنا الآن لتحصل على أفضل أسعار العزل بالطائف</div>
+                <div class="phone-label">تواصل معنا الآن لتحصل على معاينة فورية وأفضل أسعار العزل بالطائف</div>
                 <div class="phone-number">0562838639</div>
             </div>
 
             <a href="tel:0562838639" class="cta-btn">
-                <span>📞</span> اضغط هنا للاتصال المباشر بالمختص
+                <span>📞</span> اضغط هنا للاتصال المباشر بالمختص الآن
             </a>
         </div>
     </div>
 
     <footer>
-        جميع الحقوق محفوظة © عوازل الطائف 2026
+        جميع الحقوق محفوظة © شركة عوازل اسطح وخزانات بالطائف 2026
     </footer>
 
 </body>
