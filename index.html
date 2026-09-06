@@ -120,6 +120,11 @@
             direction: ltr;
             letter-spacing: 2px;
         }
+        .buttons-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
         .cta-btn {
             display: flex;
             align-items: center;
@@ -139,6 +144,26 @@
         .cta-btn:hover {
             transform: translateY(-2px);
             background: linear-gradient(135deg, #16a34a, #15803d);
+        }
+        .whatsapp-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+            text-decoration: none;
+            padding: 16px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #128c7e, #075e54);
         }
         footer {
             margin-top: 20px;
@@ -188,9 +213,14 @@
                 <div class="phone-number">0562838639</div>
             </div>
 
-            <a href="tel:0562838639" class="cta-btn">
-                <span>📞</span> اضغط هنا للاتصال المباشر بالمختص
-            </a>
+            <div class="buttons-group">
+                <a href="tel:0562838639" class="cta-btn">
+                    <span>📞</span> اضغط هنا للاتصال المباشر بالمختص
+                </a>
+                <a href="https://wa.me/966562838639" class="whatsapp-btn" target="_blank">
+                    <span>💬</span> تواصل معنا (واتساب)
+                </a>
+            </div>
         </div>
     </div>
 
